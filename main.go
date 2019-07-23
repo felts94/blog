@@ -37,7 +37,7 @@ func startHTTPServer() {
 	var HOST string
 
 	if PORT = os.Getenv("PORT"); PORT == "" {
-		PORT = "80"
+		PORT = "8082"
 	}
 
 	if HOST = os.Getenv("HOST"); HOST == "" {
@@ -51,12 +51,11 @@ func startHTTPServer() {
 		fmt.Fprintf(w, "ok")
 	})
 	http.HandleFunc("/info", func(w http.ResponseWriter, r *http.Request) {
-		log.Printf("[%s] %s %s", r.RemoteAddr, r.Method, r.URL)
 
 		s := strings.Split(r.RemoteAddr, ":")
 
 		info := getUserLocation(s[0])
-		log.Printf("[%s] Local: %v", r.RemoteAddr, info)
+		log.Printf("[%s] %s %s %s %s", r.RemoteAddr, r.Method, r.URL, info.Region, info.City)
 
 		response := Echo{
 			Headers: r.Header,
