@@ -1,134 +1,17 @@
 <head>
-    <title>Kyle Felter</title>
+    <title>Kyle Felter - Blog</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 
 <style>
-    .pic {
-        max-width: 90%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
     @media screen and (min-width: 800px) {
-        .profile {
-            max-width: 80%;
-            margin: auto;
-        }
-
-        .pic {
-            width: 20%;
-        }
-
-        .container {
-            max-width: 70%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            display: grid;
-        }
-
-        .left-half {
-            grid-column: 1;
-        }
-
-        .right-half {
-            grid-column: 2;
-        }
-    }
-
-    .body {
-        background-color: #f7f7fc;
-        color: rgb(23, 9, 68);
-    }
-
-    .link {
-        color: rgb(0, 4, 255);
-        text-decoration: none;
-    }
-
-
-
-    .work {
-        max-width: 100%;
-        left: 0;
-    }
-
-    .description {
-        margin-top: 10;
-    }
-
-    .pic {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
-    .name {
-        text-align: center;
-    }
-
-    .message {
-        color: #f7f7fc;
-        background-color: rgb(23, 9, 68);
-        text-align: center;
-        top: 0;
-        left: 0;
-        right: 0;
     }
 </style>
 
 <body class="body">
     <div class="message" id="thank">Thank you for visiting!</div>
-    <h1 class="profile name">Kyle Felter</h1>
-    <img class="profile pic" src="./ME.jpg">
-    <p class="profile pic description">
-        Goofy. Love inventing, hacking, and learning.
-    </p>
-    <div class="container">
-
-        <div class="left-half">
-            <h3 class="profile description about">About</h3>
-            <p class="profile description">
-                Favorite tech: go, aws, react, docker. Favorite topics: Security, Micro Services, CI/CD, DevSecOps. I've
-                been
-                automating my tasks since high school using my TI84 to write programs to speed up my homework so I could
-                play
-                more video games. Today I use python to automate my workflows so I can play more video games.</p>
-            <p class="profile description">Resume <a class="profile link" href="./Resume.pdf">PDF</a> <a class="profile link" href="./Resume.md">Markdown</a></p>
-        </div>
-        <div class="right-half">
-            <h3 class="work links header">Social</h3>
-            <div class="work links">
-                Connect with me on <a class="link" target="_blank"
-                    href="https://www.linkedin.com/in/kyle-f-770931b3/">linkedin</a><br>
-                Follow me on <a class="link" href="https://github.com/felts94" target="_blank">github</a>, <a
-                    class="link" href="https://twitter.com/iFELTER" target="_blank">twitter</a>, and <a class="link"
-                    href="https://www.instagram.com/felts94/" target="_blank">instagram</a><br>
-            </div>
-            <h3 class="work projects header">Projects</h3>
-            <div class="work projects">
-                <ul class="work projects list">
-                    <li>Simple-fs <a class="link" target="_blank" href="https://github.com/felts94/simple-fs">Code</a></li>
-                    <li>Queue-app <a class="link" target="_blank" href="https://github.com/felts94/queue-app">Code</a>,
-                        <a class="link" target="_blank" href="http://18.234.196.95:8080/">Live</a></li>
-                    <li>Hueput <a class="link" target="_blank" href="https://github.com/felts94/CoreColor">Code</a>, <a
-                            class="link" target="_blank" href="https://s3.amazonaws.com/core-color/index.html">Live</a>
-                    </li>
-                    <li>Forrest <a class="link" target="_blank"
-                            href="https://github.com/felts94/caverunner/blob/master/fractal.js">Code</a>, <a class="link"
-                            target="_blank" href="https://s3.amazonaws.com/caverunner.co-website/index.html">Live</a>
-                    </li>
-                    <li>Arduino memory game <a class="link" target="_blank"
-                            href="https://github.com/felts94/ard-memory-game">Code</a>, <a class="link" target="_blank"
-                            href="https://www.youtube.com/watch?v=zAuerOaZ_Z8">YouTube</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <h1 class="profile name">Kyle Felter - Blog</h1>
     <script>
         function getInfo() {
             $.get(`/info`, (resp) => {
@@ -138,6 +21,5 @@
             })
         }
         getInfo();
-
     </script>
 </body>
