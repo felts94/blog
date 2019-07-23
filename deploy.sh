@@ -5,7 +5,7 @@ echo uploading
 ls -1
 echo
 echo build the go bin
-GOOS=linux go build -o portfolio.linux
+GOOS=linux go build -o blog.linux
 echo
 echo attempt to deploy website to ec2 at $EC2ADDR
-scp -r * ubuntu@$EC2ADDR:/home/ubuntu/simple-fs/
+scp -r * ubuntu@$EC2ADDR:/home/ubuntu/blog/
