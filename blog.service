@@ -1,0 +1,10 @@
+[Service]
+User=root
+Restart=always
+Type=simple
+WorkingDirectory=/home/ubuntu/blog
+Environment=API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ExecStart=/home/ubuntu/blog/blog.linux
+
+[Install]
+WantedBy=multi-user.target
