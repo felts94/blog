@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Kyle Felter - Blog</title>
+    <link>http://kfelter.com:8082/posts/</link>
+    <description>Recent content in Posts on Kyle Felter - Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Jul 2019 19:39:50 -0400</lastBuildDate>
+    
+	<atom:link href="http://kfelter.com:8082/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Photography</title>
+      <link>http://kfelter.com:8082/posts/photography/</link>
+      <pubDate>Tue, 23 Jul 2019 19:39:50 -0400</pubDate>
+      
+      <guid>http://kfelter.com:8082/posts/photography/</guid>
+      <description>This was a photography session at Virginia Tech&amp;rsquo;s Duck Pond on October 31, 2015
+The tree outside my aprtment after snow Sadie waiting to play The Capitol Wheel in National Harbor, MD My mom insisting I had a Christmas tree in my apartment that year at college My dogs being goofy when I cought them on the couch We buried my little brother in the sand </description>
+    </item>
+    
+    <item>
+      <title>Create a blog</title>
+      <link>http://kfelter.com:8082/posts/my-first-post/</link>
+      <pubDate>Tue, 23 Jul 2019 18:51:46 -0400</pubDate>
+      
+      <guid>http://kfelter.com:8082/posts/my-first-post/</guid>
+      <description>How I created this blog in under an hour  Use the smallest ec2 instance with a simple go file server Follow this guide for hugo Write a deploy script to your ec2 deploy.sh Now everytime I create a new post all I have to do is run deploy.sh  The full blog code can be found here https://github.com/felts94/blog</description>
+    </item>
+    
+  </channel>
+</rss>

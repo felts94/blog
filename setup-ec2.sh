@@ -1,7 +1,7 @@
 #!/bin/bash
 echo setup the service to run continuously
-sudo mv portfolio.service /etc/systemd/system
+sudo mv blog.service /etc/systemd/system
 sudo systemctl daemon-reload
-sudo systemctl start portfolio
-sudo systemctl enable portfolio
-sudo systemctl status portfolio
+sudo systemctl start blog
+sudo systemctl enable blog
+sudo systemctl status blog

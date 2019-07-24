@@ -1,0 +1,1 @@
+This is the folder where images go, they are not in github because the images are too large
